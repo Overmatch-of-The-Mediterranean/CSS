@@ -1,0 +1,339 @@
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.focus {
+    width: 720px;
+    height: 100%;
+    float: left;
+    
+}
+.newsflash {
+    width: 250px;
+    height: 100%;
+    float: left;
+    margin-left: 10px;
+    
+}
+.news {
+    height: 163px;
+    border: 1px solid #e4e4e4;
+}
+.lifeservice {
+    overflow: hidden;
+    height: 207px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+.newsflash .lifeservice ul {
+    width: 256px;
+}
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: calc(207px/3);
+    text-align: center;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+.lifeservice ul li i {
+    display: inline-block;
+    width: 20px;
+    height: 25px;
+    /* margin-left: -8px; */
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -19px -16px;
+}
+.bargin {
+    margin-top: 5px;
+}
+.news-hd {
+    height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    padding: 0 15px;
+}
+.newsflash h2 {
+    float: left;
+    line-height: 33px;
+    /* padding-left: 15px; */
+    font-weight: normal;
+    font-size: 14px;
+}
+.news-hd a{
+    float: right;
+    line-height: 33px;
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+}
+.news-hd a::after {
+    font-family: 'icomoon';
+    content: '>';
+    margin-left: 7px;
+    /* margin-right: 16px; */
+}
+.news ul {
+    /* border-bottom: 1px solid #e4e4e4; */
+    padding-top: 5px;
+}
+.news ul li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.news ul li a {
+    padding-left: 10px;
+    font-size: 10px;
+    line-height: 24px;
+}
+.recom {
+    height: 163px;
+    margin-top: 10px;
+    background-color: #ebebeb;
+}
+.recom_hd {
+    float: left;
+    width: 206px;
+    height: 100%;
+    padding-top: 30px;
+    background-color: #5c5251;
+    text-align: center;
+    box-sizing: border-box;
+}
+.recom_bd {
+    float: left;
+}
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+.recom_bd ul li:nth-child(-n+3)::after {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    content: '';
+    width: 1px;
+    height: 143px;
+    background-color: #ddd;
+}
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+.like_hd {
+    position: relative;
+}
+.like_hd h2 {
+    float: left;
+    padding: 30px 0 10px 0;
+    font-size: 18px;
+    font-family: '微软雅黑';
+    color: #333;
+
+}
+.like_hd a {
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    float: right;
+    /* padding: 15px 0 5px 0; */
+}
+.like_hd a::after {
+    content: '>';
+    padding-left: 5px;
+}
+.like_bd {
+
+    height: 233px;
+    /* background-color: pink; */
+}
+.like_bd ul li {
+    position: relative;
+    float: left;
+    width: 200px;
+    padding: 5px 0 0 20px;
+    box-sizing: border-box;
+}
+.like_bd ul li a {
+    display: block;
+    width: 200px;
+    height: 230px;
+}
+.like_bd ul li a p {
+    padding:10px 0 0 20px;
+}
+.like_bd ul li a span {
+    font-size: 18px;
+    color: #df3033;
+    padding-left: 20px;
+}
+.like_bd ul li a span::before {
+    content: '¥';
+    font-size: 14px;
+}
+.like_bd ul li:nth-child(2) a img {
+    box-sizing: border-box;
+    padding: 10px 0 0 10px;
+}
+.like_bd ul li:nth-child(2) a p {
+    padding-top: 17px;
+}
+.like_bd ul li:nth-child(3) a img {
+    box-sizing: border-box;
+    padding-left: 65px;
+}
+.like_bd ul li:nth-child(3) a p {
+    padding-top: 20px;
+}
+.like_bd ul li:nth-child(4) a img {
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 46px;
+}
+.like_bd ul li:nth-child(4) a p {
+    padding-top: 40px;
+}
+.like_bd ul li:nth-child(5) a img {
+    box-sizing: border-box;
+    padding-left: 25px;
+}
+.like_bd ul li:nth-child(5) a p {
+    padding-top: 15px;
+}
+.like_bd ul li:nth-child(6) a img {
+    box-sizing: border-box;
+    padding-left: 55px;
+}
+.like_bd ul li:nth-child(6) a p {
+    padding-top: 17px;
+}
+/* :nth-child()只能用于亲兄弟 ，不能用于表兄弟
+亲
+ul
+    li
+    li
+ul
+标
+ul
+    li
+ul
+ul
+    li
+ul */
+.like_bd ul li:nth-child(-n+5) a::after {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    content: '';
+    width: 1px;
+    height: 65px;
+    background-color: #ddd;
+}
+.floor {
+    margin-top: 30px;
+}
+.one_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+
+}
+.one_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: normal;
+}
+.tab_list {
+    float: right;
+    position: relative;
+}
+.tab_list ul li {
+    float: left;
+    line-height: 30px;
+}
+/* 有问题 为啥a不能nth-child(-n+8)  li可以nth-child(-n+8) */
+/* .tab_list ul li:nth-child(-n+8) li::after {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #999;
+} */
+.tab_list ul li:nth-child(-n+8)::after {
+    position: absolute;
+    bottom: 8px;
+    content: '';
+    width: 1px;
+    height: 12px;
+    background-color: #999;
+}
+.tab_list ul li a{
+    padding: 0 15px;
+}
+.style_red {
+    color: #c81623;
+}
+.one_bd {
+    height: 361px;
+    background-color: #fff;
+}
+.tab_content_item div {
+    float: left;
+    height: 361px;
+    text-align: center;
+}
+.col_210 {
+    
+    width: 210px;
+    background-color: #f9f9f9;
+}
+.col_210 ul {
+    padding-left: 12px;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    margin-right: 10px;
+    line-height: 34px;
+    border-bottom: 1px solid #ededed;
+}
+.col_329 {
+    width: 329px;
+}
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+.col_219 {
+    width: 215px;
+}
+.col_210 a img {
+    padding-top: 26px;
+    text-align: center;
+}
+.col_329 a img {
+    width: 100%;
+    height: 100%;
+}
+.bb {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+.dd {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}

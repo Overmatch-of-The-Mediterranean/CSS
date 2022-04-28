@@ -1,0 +1,125 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    height: 84px;
+    border-bottom: 2px solid #b1191a;
+    padding-top: 17px;
+    box-sizing: border-box;
+}
+.registerarea {
+    margin-top: 22px;
+}
+.register_top {
+    height: 40px;
+    background-color: #ececec;
+    border: 1px solid #ccc;
+}
+.register_top h3 {
+    float: left;
+    color: #333;
+    font-size: 16px;
+    padding-left: 10px;
+    line-height: 40px;
+}
+.right {
+    float: right;
+    line-height: 40px;
+    
+    font-size: 14px;
+}
+.right a {
+    color: #c81623;
+}
+.register_form {
+    height: 480px;
+    border-bottom: 1px solid #ccc;
+}
+.reg_bd {
+    width: 555px;
+    margin: 50px auto 0;
+    /* background-color: pink; */
+}
+.reg_bd ul li:nth-child(-n+2)  {
+    margin-bottom: 20px;
+}
+.reg_bd ul li label {
+    display: inline-block;
+    width: 85px;
+    text-align: right;
+    font-size: 14px;
+    color: #4c4c4c;
+}
+.reg_bd ul li input {
+    width: 240px;
+    height: 35px;
+    border: 1px solid #ccc;
+}
+.reg_bd ul li span {
+    color: #df3033;
+}
+.reg_bd ul li .error i,
+.reg_bd ul li .success i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+    vertical-align: middle;
+}
+.reg_bd ul li .success i  {
+    color: green;
+    background: url(../images/success.png) no-repeat;
+}
+.reg_bd ul .safe em{
+    padding: 0 12px;
+    color: #fff;
+}
+.reg_bd ul .safe {
+    margin: 10px 0 20px;
+    padding-left: 164px;
+}
+.ruo {
+    background-color: #de1111;
+}
+.zhong {
+    background-color: #40b83f;
+}
+.qiang {
+    background-color: #f79100;
+}
+.reg_bd ul li input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+.reg_bd ul .agree {
+    margin-top: 40px;
+    padding-left: 85px;
+}
+.reg_bd ul .agree a{
+    font-size: 12px;
+    color: #1ba1e6;
+}
+.reg_bd ul li input[type=submit] {
+    width: 200px;
+    height: 35px;
+    /* margin-top: 47px;
+    margin-left: 95px; */
+    margin: 47px 0 0 95px;
+    background-color: #c81623;
+    color: #fff;
+}
+.mod_copyright .top {
+    padding-top: 15px;
+    text-align: center;
+}
+.mod_copyright .top a{
+    padding: 0 12px;
+
+}
+.mod_copyright .copyright {
+    margin-top: 5px;
+    line-height: 20px;
+    text-align: center;
+}
