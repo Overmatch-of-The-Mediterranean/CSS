@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 160px;
+            height: 24px;
+            line-height: 24px;
+            margin: 100px auto;
+            border: 2px solid red;
+        }
+
+        .box .tejia {
+            position: relative;
+            display: inline-block;
+            /* float: left; */
+            width: 90px;
+            height: 24px;
+            background-color: red;
+            color: #fff;
+            margin-right: 10px;
+            font-weight: 700;
+            text-align: center;
+
+        }
+
+        .tejia i {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-width: 24px 10px 0 0;
+            border-style: solid;
+            border-color: transparent #fff transparent transparent;
+        }
+
+        .origin {
+            color: grey;
+            font-size: 12px;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span class="tejia">$99<i></i></span>
+        <span class="origin">$100</span>
+    </div>
+</body>
+
+</html>

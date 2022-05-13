@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+        }
+
+        .one {
+            margin-bottom: 20px;
+        }
+
+        .two {
+            margin: 0 20px;
+        }
+
+        .three {
+            margin: 0 auto;
+        }
+
+        .father {
+            text-align: center;
+        }
+
+        /* margin复合写发与padding相同 */
+    </style>
+</head>
+
+<body>
+    <div class="one">我是一</div>
+    <div class="two">我是二</div>
+    <!-- 外边距典型应用：
+    外边距可以让块级盒子水平居中,但是必须满足两个条件:
+    ①盒子必须指定了宽度( width)。
+    ②盒子左右的外边距都设置为auto。
+    常见的写法,以下三种都可以:
+    ●margin-left: auto; margin-right auto;
+    ●margin: auto;
+    ●margin: 0 auto（主要用它）; -->
+    <div class="three">我是居中</div>
+    <!-- 行内元素与行内块元素水平居中可以给其父元素添加text-align: center -->
+    <div class="father">
+        <span>我是儿子</span>
+        <img src="padding复合.png">
+    </div>
+</body>
+
+</html>

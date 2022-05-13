@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: absolute;
+        }
+
+        .xiongda {
+            z-index: 3;
+            margin: 10px 10px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .xionger {
+            z-index: 2;
+            margin: 20px 20px;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .qiangge {
+            z-index: 1;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xiongda">熊大</div>
+    <div class="box xionger">熊二</div>
+    <div class="box qiangge">光头强</div>
+    <img src="定位叠放顺序.png" alt="">
+</body>
+
+</html>

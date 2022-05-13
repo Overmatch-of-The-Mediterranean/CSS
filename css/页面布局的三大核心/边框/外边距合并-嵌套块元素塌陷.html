@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            /* border: 1px dashed transparent; */
+            /* padding-top: 1px; */
+            overflow: hidden;
+        }
+
+        .son {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="外边距合并.png">
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    <img src="块级元素嵌套塌陷.png">
+</body>
+
+</html>

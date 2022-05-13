@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            width: 800px;
+            height: 500px;
+            border: 2px solid blue;
+
+            /* flex-direction: column-reverse; */
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .one {
+            border: 1px solid red;
+            background-color: red;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .change {
+            /* align-self: start; */
+            flex: 0 1 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <li class="one change">1</li>
+        <li class="one">2</li>
+        <li class="one">3</li>
+        <li class="one">4</li>
+    </div>
+    <img src="容器属性.png" alt="">
+    <img src="值1.png" alt="">
+    <img src="值2.png" alt="">
+    <img src="值3.png" alt="">
+    <img src="flex项目属性.png" alt="">
+</body>
+
+</html>

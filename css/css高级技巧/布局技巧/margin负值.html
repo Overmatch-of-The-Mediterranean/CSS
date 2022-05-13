@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        ul li {
+            position: relative;
+            float: left;
+            list-style: none;
+            width: 200px;
+            height: 300px;
+            border: 1px solid red;
+            margin-left: -1px;
+        }
+
+        ul li:hover {
+            /* 如果盒子没有设置定位就在hover里面设置相对定位
+            position: relative; */
+            /* 如果盒子有定位就用z-index提高层级 */
+            z-index: 1;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

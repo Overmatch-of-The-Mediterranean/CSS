@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .w {
+            width: 800px;
+            height: 1000px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+
+        .fixed {
+            position: fixed;
+            left: 50%;
+            margin-left: 405px;
+            width: 30px;
+            height: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="固定定位.png" alt=""><br>
+    固定定位小技巧-固定到版心右侧
+    left：50% + margin:版心宽度的一半像素
+    <div class="fixed"></div>
+    <div class="w"></div>
+</body>
+
+</html>
